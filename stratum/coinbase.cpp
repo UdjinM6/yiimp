@@ -27,7 +27,7 @@ static void p2sh_pack_tx(YAAMP_COIND *coind, char *data, json_int_t amount, char
 	strcat(data, coinb2_part);
 }
 
-static void script_pack_tx(YAAMP_COIND *coind, char *data, json_int_t amount, char *script)
+static void script_pack_tx(YAAMP_COIND *coind, char *data, json_int_t amount, const char *script)
 {
 	char evalue[32];
 	char coinb2_part[256];
